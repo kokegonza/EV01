@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@color/neutro">
+
+        <TextView
+            android:id="@+id/titulo_notificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notificaciones_de_ventanas"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recibir_notificaciones_si_hay_ventanas_abiertas"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:layout_marginBottom="12dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_notificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/activar_notificaciones"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/boton_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_cambios"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+    </layout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/neutro">
+
+    <TextView
+        android:id="@+id/titulo_recordatorios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recordatorios_de_ventanas"
+        android:textSize="24sp"
+        android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edit_recordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="note"
+            android:hint="@string/a_adir_recordatorio"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            />
+
+    <Button
+        android:id="@+id/boton_agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar" />
+</LinearLayout>
+
+
+</layout>

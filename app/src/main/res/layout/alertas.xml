@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AlertConfigActivity"
+        android:background="@color/neutro">
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configurar_alertas"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/windowSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/alertTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="30dp"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/alertConditionOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alertar_cuando_est_abierta"
+            app:layout_constraintTop_toBottomOf="@id/windowSelector"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/alertConditionClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alertar_cuando_est_cerrada"
+            app:layout_constraintTop_toBottomOf="@id/alertConditionOpen"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/saveAlertButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar_configuracion_"
+            app:layout_constraintTop_toBottomOf="@id/alertConditionClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

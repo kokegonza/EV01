@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/neutro">
+
+        <TextView
+            android:id="@+id/titulo_configuracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configuracion_de_ventanas"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/seleccionar_ventana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_ventana"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_ventanas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/tiempo_apertura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tiempo_de_apertura_minutos"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edit_tiempo_en_apertura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="time"
+            android:hint="@string/ejemplo_30"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/boton_guardar_configuracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar_configuracion"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="26dp"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</layout>

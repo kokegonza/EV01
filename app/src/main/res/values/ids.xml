@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edit_profile_button" type="id">edit_profile_button</item>
+    <item name="security_notifications_switch" type="id">security_notifications_switch</item>
+    <item name="security_notifications_label" type="id">security_notifications_label</item>
+    <item name="two_factor_switch" type="id">two_factor_switch</item>
+    <item name="two_factor_auth_label" type="id">two_factor_auth_label</item>
+    <item name="security_settings_title" type="id">security_settings_title</item>
+</resources>
